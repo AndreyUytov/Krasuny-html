@@ -1,0 +1,96 @@
+a {
+	text-decoration: none;
+	color: white;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+	font-size: 16px;
+	background-color:$behinThema;
+}
+
+.content-box-component {
+	box-sizing: content-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border:0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.btn {
+	padding: 5px;
+
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	
+	color: white;
+
+	background-color: $btnThema;
+	border: 1px solid transparent;
+	cursor: pointer;
+	&:hover {
+		background-color: transparent;
+		border: 1px solid white;
+		color: $btnThema;
+		background-color: black;
+	}
+	&:active {
+		transform: scale(1.1);
+	}
+	&:disabled {
+		background-color: grey;
+		cursor: default;
+		box-shadow: none;
+		color: white;
+		border: 1px solid transparent;
+	}
+}
+
+.container {
+	width: 1250px;
+    margin: 0 auto;
+	padding: 0 25px;
+}
+
+.link {
+	@include flex-block;
+    padding-bottom: 5px;
+
+    font-size: 18px;
+
+    &:hover {
+		color: $btnThema;
+    }
+    &:active {
+        color: grey;
+    }
+}
