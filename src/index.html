@@ -9,69 +9,175 @@
     </head>
     <body>
       <header class="page-header">
-         <div class="page-header__left-block header-left-block">
-           <img class="header-left-block__logo" src="./images/content/KRASUNYA.png" width="140px" height="18px"/>
-           <button class="header-left-block__btn btn" type="button">
-             Каталог косметики
+          <section class="header-block">
+            <div class="page-header__left-block header-left-block">
+              <img class="header-left-block__logo" src="./images/content/KRASUNYA.png" width="140" height="18"/>
+              <button class="header-left-block__snap snap" type="button">
+                Каталог косметики
+              </button>
+              <nav class="header-left-block__nav">
+               <ul class="nav-list">
+                 <li class="nav-list__item">
+                   <a href="">
+                     Очищающие средства, тонизация
+                   </a>
+                 </li>
+                 <li class="nav-list__item">
+                   <a href="">
+                     Мезороллеры, аксессуары
+                   </a>
+                 </li>
+                 <li class="nav-list__item">
+                   <a href="">
+                     Средства для волос и тела
+                   </a>
+                 </li>
+                 <li class="nav-list__item">
+                   <a href="">
+                     Средства для орбитальной зоны
+                   </a>
+                 </li>
+                 <li class="nav-list__item">
+                   <a href="">
+                     Карбокситерапия
+                   </a>
+                 </li>
+                 <li class="nav-list__item">
+                   <a href="">
+                     Концентраты, мезококтейли
+                   </a>
+                 </li>
+                 <li class="nav-list__item">
+                   <a href="">
+                     Химические пилинги
+                   </a>
+                 </li>
+                 <li class="nav-list__item">
+                   <a href="">
+                     Средства с SPF, BB/CC-крема
+                   </a>
+                 </li>
+                 <li class="nav-list__item">
+                   <a href="">
+                     Маски
+                   </a>
+                 </li>
+                 <li class="nav-list__item">
+                   <a href="">
+                     Крема, сыворотки
+                   </a>
+                 </li>
+               </ul>
+              </nav>
+              <form class="header-left-block__search-form search-form">
+                <button class="search-form__close-snap snap" type="button">
+                  <span class="visually-hidden">
+                    Закрыть форму поиска
+                  </span>
+                </button>
+                <input class="search-form__input" type="search" />
+                <button class="search-form__submit-snap snap" type="submit">
+                  <span class="visually-hidden">
+                    Выполнить поиск
+                  </span>
+                </button>
+              </form>
+              <div class="header-left-block__progress-bar">
+                <span class="bar">
+                  <span class="scale"></span>
+                </span>
+              </div>
+            </div>
+            <div class="header-right-block">
+              <nav class="header-right-block__site-nav">
+               <ul class="site-nav__list nav-list">
+                 <li class="site-nav__item">
+                   <a href="">
+                     <span class="visually-hidden">Избранное</span>
+                   </a>
+                 </li>
+                 <li class="site-nav__item">
+                   <a href="">
+                     <span class="visually-hidden">Личный кабинет</span>
+                   </a>
+                 </li>
+                 <li class="site-nav__item">
+                   <a href="">
+                     <span class="visually-hidden">Корзина</span>
+                   </a>
+                 </li>
+               </ul>
+               <button class="site-nav__btn btn" type="button">
+                 Подбор косметики
+               </button>
+              </nav>
+            </div>
+          </section>
+         <section class="banner-block">
+           <strong class="baner-block__slogan">Профессиональный уход дома!</strong>
+           <p class="banner-block__description">
+            Преобретите медицинскую косметику для ухода за собой, не пользуясь услугами косметолога.
+           </p>
+           <button class="banner-block__btn btn-fon" type="button">
+            Подобрать косметику под себя
            </button>
-           <nav class="header-left-block__nav">
-            <ul class="nav-list">
-              <li class="nav-list__item">
-                <a href="">
-                  Очищающие средства, тонизация
-                </a>
+           <div class="banner-block__banner-products">
+             <ul class="banner-products__list">
+               <li class="banner-products__list-item">
+                 <figure>
+                   <img class="banner-img" src="./images/content/banner-big-img.png"
+                   width="178" height="473" alt="product-banner imagination">
+                   <figcaption>
+                     <div class="small-card">
+                       <img class="small-card__img" 
+                       src="./images/content/small-product-card.png"
+                       alt="small product card imagine" width="63" height="63" />
+                       <div class="small-card-description__wrapper">
+                         <h3 class="small-card__title">
+                          Гидрогелевые патчи Dr. Hedison 
+                         </h3>
+                         <div class="small-card-price__wrapper">
+                          <p class="small-card__price">
+                            12 250 грн.
+                          </p>
+                          <p class="small-card__discount">
+                            -25%
+                          </p>
+                         </div>
+                       </div>
+                     </div>
+                   </figcaption>
+                 </figure>
+               </li>
+               <li class="banner-products__list-item">
+                <figure>
+                  <img class="banner-img" src="./images/content/banner-small-img.png"
+                  width="144" height="386" alt="product-banner imagination">
+                  <figcaption>
+                    <div class="small-card">
+                      <img class="small-card__img" 
+                      src="./images/content/small-product-card.png"
+                      alt="small product card imagine" width="63" height="63" />
+                      <div class="small-card-description__wrapper">
+                        <h3 class="small-card__title">
+                         Гидрогелевые патчи Dr. Hedison 
+                        </h3>
+                        <div class="small-card-price__wrapper">
+                         <p class="small-card__price">
+                           12 250 грн.
+                         </p>
+                         <p class="small-card__discount">
+                           -25%
+                         </p>
+                        </div>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
               </li>
-              <li class="nav-list__item">
-                <a href="">
-                  Мезороллеры, аксессуары
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="">
-                  Средства для волос и тела
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="">
-                  Средства для орбитальной зоны
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="">
-                  Карбокситерапия
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="">
-                  Концентраты, мезококтейли
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="">
-                  Химические пилинги
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="">
-                  Средства с SPF, BB/CC-крема
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="">
-                  Маски
-                </a>
-              </li>
-              <li class="nav-list__item">
-                <a href="">
-                  Крема, сыворотки
-                </a>
-              </li>
-            </ul>
-           </nav>
-           <form class="header-left-block__search-form">
-             <input class="search-form__input" type="search" />
-           </form>
-         </div>
+             </ul>
+           </div>
+         </section>
       </header>
 
 
