@@ -2,44 +2,27 @@ const webpack = require("webpack");
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const cssnano = require("cssnano");
 const autoprefixer = require("autoprefixer");
 
 module.exports = env => {
   const isProduction = env.production === true;
 
   return {
-    context: path.resolve(__dirname, "src"),
-
     mode: isProduction ? "production" : "development",
-
     entry: {
-      index: "./index.js",
-      catalog: "./catalog.js"
+      index: "./index.html",
+      catalog: "./catalog.html"
     },
-
     output: {
-      path: path.join(__dirname, "public"),
-      publicPath: "public/",
-      filename: "js/[name].bundle.js",
+      path: path.join(__dirname, "dist"),
+      publicPath: "/",
+      filename: "[name].html",
     },
 
     devtool: isProduction ? "source-map" : "inline-source-map",
 
     devServer: {
-      contentBase: path.resolve(__dirname, "public"),
-      publicPath: "/public/",
-      watchContentBase: true,
-      openPage: "html/index.html"
-    },
-
-    optimization: {
-      minimizer: [
-        new UglifyJsPlugin({
-          sourceMap: true
-        })
-      ]
+      contentBase: path.join(__dirname, "dist")
     },
 
     plugins: [
@@ -98,44 +81,21 @@ module.exports = env => {
           ]
         },
         {
-          test: /\.(png|jpe?g|gif|woff|woff2|svg|webp)$/,
-          use: [
-            {
-              loader: "file-loader",
-              options: {
-                name: "[path][name].[ext]",
-                publicPath: (url, resourcePath, context) => {
-                  if (/img/.test(resourcePath)) {
-                    return `${url}`;
-                  } else {
-                    return `../${url}`;
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
           test: /\.html$/,
           use: [
-            {
-              loader: "file-loader",
-              options: {
-                name: "[path][name].[ext]"
-              }
-            },
             {
               loader: "extract-loader"
             },
             {
               loader: "html-loader",
               options: {
-                attrs: ["img:src"]
-              }
+                attrs: ["img:src", "link:href"]
+            }
             }
           ]
         }
       ]
     }
-  };
-};
+
+  }
+}  
