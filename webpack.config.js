@@ -9,11 +9,10 @@ module.exports = env => {
   const isProduction = env.production === true;
 
   return {
-    context: path.resolve(__dirname, "src"),
     mode: isProduction ? "production" : "development",
     entry: {
-      index: './index.js',
-      catalog: './catalog.js'
+      index: './src/index.js',
+      catalog: './src/catalog.js'
     },
     output: {
       path: path.join(__dirname, "dist"),
@@ -91,7 +90,9 @@ module.exports = env => {
               loader: "file-loader",
               options: {
                 name: "[name].[ext]",
-                outputPath: path.join(__dirname, 'dist')
+                publicPath: (url, resourcePath, context) => {
+                  return `${context}/dist`
+                }
               }
             },
             {
