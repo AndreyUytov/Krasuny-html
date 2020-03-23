@@ -1,2 +1,1 @@
-import './html/catalog.html';
-import './styles/index.scss';
+import './pages/catalog.html';
