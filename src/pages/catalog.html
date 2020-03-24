@@ -116,7 +116,122 @@
   </header>
 
   <main class="page-main">
-    
+    <nav class="breadcrumbs-nav">
+      <ul class="breadcrumbs-nav__list">
+        <li>
+          <a href="index.html" class="breadcrumbs-nav__link">
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="" class="breadcrumbs-nav__link">
+            Уход за лицом
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="filter-block">
+      <h2 class="filter-block__title">
+        Фильтр
+      </h2>
+      <form class="filter-block__filter-form filter-form">
+        <fieldset class="filter-form__price">
+          <legend>Цена</legend>
+          <label>
+            <input type="checkbox" class="filter-form__checkbox" name="price-check"> Скидки
+          </label>
+          <div class="wrapper-price-range">
+            <div class="price-range__scale">
+              <div class="price-range__bar"></div>
+              <div class="price-range__toggle price-range__toggle--min"></div>
+              <div class="price-range__toggle price-range__toggle--max"></div>
+            </div>
+            <label>
+              <span class="visually-hidden">min price</span>
+              <input class="filter-form__input" type="text" value="930">
+            </label>
+            <label>
+              <span class="visually-hidden">max price</span>
+              <input class="filter-form__input" type="text" value="25093">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="filter-form__skin">
+          <legend>Тип кожи</legend>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="text-skin-check"> Текстурированная
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="bold-skin-check"> Жирная
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="norm-skin-check"> Нормальная
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="combine-skin-check"> Комбинированная
+          </label>
+        </fieldset>
+
+        <fieldset class="filter-form__skin">
+          <legend>Возраст</legend>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="20-25-ago-check"> 20-25 лет
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="25-30-ago-check"> 25-30 лет
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="30-40-ago-check"> 30-40 лет
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="40-50-ago-check"> 40-50 лет
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="50-ago-check"> 50 лет и более
+          </label>
+        </fieldset>
+
+        <fieldset class="filter-form__effect">
+          <legend>Эффект</legend>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="akne-effect-check"> Активные акне
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="post-akne-effect-check"> Постакне/Покраснения, рубцы, шелушения, Неровный рельеф кожи
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="dry-skin-effect-check"> Сухая кожа + Акне
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="bold-skin-effect-check"> Жирная кожа + Акне
+          </label>
+          <label>
+            <input class="filter-form__checkbox" type="checkbox" name="normal-effect-check"> Нет дополнительной проблемы
+          </label>
+        </fieldset>
+
+        <fieldset class="filter-form__care">
+          <legend>Уход</legend>
+          <label>
+            <input class="filter-form__radio" type="radio" name="care-radio"> Дневной
+          </label>
+          <label>
+            <input class="filter-form__radio" type="radio" name="care-radio"> Ночной
+          </label>
+        </fieldset>
+        <button type="submit" class="filter-form__submit-btn btn-fon">Применить фильтры</button>
+        <button type="button" class="filter-form__btn btn">Сбросить фильтры</button>
+      </form>
+    </section>
+
+    <section class="production-list-block">
+      <h2 class="production-list-block__title">
+        Уход за лицом
+      </h2>
+      
+    </section>
   </main>
 
   <footer class="page-footer">
