@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Карточка товара</title>
+  <title>Корзина</title>
 </head>
 <body>
-  
   <header class="page-header">
     <section class="header-block">
       <div class="page-header__left-block header-left-block">
@@ -114,7 +113,7 @@
     </section>
     <a href="catalog.html">CATALOG!!!!!!</a>
   </header>
-  
+
   <main class="page-main">
     <nav class="breadcrumbs-nav">
       <ul class="breadcrumbs-nav__list">
@@ -125,36 +124,29 @@
         </li>
         <li>
           <a href="" class="breadcrumbs-nav__link">
-            Уход за лицом
-          </a>
-        </li>
-        <li>
-          <a href="" class="breadcrumbs-nav__link">
-            Гидрогеревые патчи Dr. Hedison
+            Корзина
           </a>
         </li>
       </ul>
     </nav>
 
-    <section class="description-block">
-      <ul class="description-block__img-list">
-         <li>
-          <img src="../images/content/description-img.png" 
-          width="439"  height="439" alt="description-img" />
-         </li>
-         <li>
-          <img src="../images/content/description-img.png" 
-          width="209"  height="209" alt="description-small-img" />
-         </li>
-      </ul>
-      <div class="description-block__order-card">
-        <div class="order-card__top-row">
-          <div class="order-card__ishere-marker">В наличие</div>
-          <div class="order-card__star-rating">звезды</div>
-        </div>
-        <h3 class="order-card__title">Piruvic40 solution Medicare Proffessional</h3>
-        <p class="order-card__price">12 250 ГРН.</p>
-        <div class="order-card__controls-row">
+    <section class="basket-list-block">
+      <h2 class="basket-list-block__title">Ваша корзина</h2>
+      <ul class="basket-list-block__items">
+        <li>
+          <a class="basket-small-card card">
+            <img class="basket-small-card__img" 
+            src="./../images/content/small-product-card.png"
+            alt="small product card imagine" width="72" height="84" />
+            <div class="basket-small-card-description__wrapper">
+              <h3 class="basket-small-card__title">
+               Гидрогелевые патчи Dr. Hedison 
+              </h3>
+              <p class="basket-small-card__weight">
+               Вес (гр): 35
+             </p>
+            </div>
+          </a>
           <div class="order-card__btns-column">
             <button class="order-card__down-snap snap" type="button">
               <span class="visually-hidden">Уменьшить количество товара</span>
@@ -164,173 +156,80 @@
               <span class="visually-hidden">Увеличить количество товара</span>
             </button>
           </div>
-          <div class="order-card__order-column">
-            <button class="order-card__favorite-snap snap" type="button">
-              <span class="visually-hidden">
-                Добавить в избранное
-              </span>
+          <p class="basket-list-block__price"> 12 250 грн.</p>
+          <button type="button" class="basket-list-block__delete-snap snap">
+            <span class="visually-hidden">Удалить из корзины</span>
+          </button>
+        </li>
+        <li>
+          <a class="basket-small-card card">
+            <img class="basket-small-card__img" 
+            src="./../images/content/basket-card.png"
+            alt="small product card imagine" width="72" height="84" />
+            <div class="basket-small-card-description__wrapper">
+              <h3 class="basket-small-card__title">
+               Гидрогелевые патчи Dr. Hedison 
+              </h3>
+              <p class="basket-small-card__weight">
+               Вес (гр): 35
+             </p>
+            </div>
+          </a>
+          <div class="order-card__btns-column">
+            <button class="order-card__down-snap snap" type="button">
+              <span class="visually-hidden">Уменьшить количество товара</span>
             </button>
-            <button class="order-card__btn btn-fon" type="button">
-              В корзину
+            <p class="order-card__amount-product">1</p>
+            <button class="order-card__up-snap snap" type="button">
+              <span class="visually-hidden">Увеличить количество товара</span>
             </button>
           </div>
+          <p class="basket-list-block__price"> 12 250 грн.</p>
+          <button type="button" class="basket-list-block__delete-snap snap">
+            <span class="visually-hidden">Удалить из корзины</span>
+          </button>
+        </li>
+      </ul>
+      <div class="basket-list-block__total">
+        <div class="basket-list-block__discount-column">
+          <form>
+            <label>
+              Промокод:
+              <input type="text" class="basket-list-block__promo-input" />
+            </label>
+            <button type="submit" class="basket-list-block__submit-snap snap">
+              <span class="visually-hidden">Отправить промокод</span>
+            </button>
+          </form>
         </div>
-        <div class="order-card__tags">
-          <h4 class="tags__title">Состав</h4>
-          <ul class="tags__list">
-            <li>Пирувинная кислота 40%</li>
-            <li>Молочная кислота 5%</li>
-          </ul>
-        </div>
-        <div class="order-card__brand">
-          <h4 class="brand__title">Бренд</h4>
-          <p class="brand__logo">
-            <img src="../images/content/brand-logo.png" class="brand__logo-img "
-            width="80" height="19" alt="brand-logo" />
+        <div class="basket-list-block__total-price">
+          <p>
+            Итого:
+            <span class="total-price">24 500 грн.</span>
           </p>
         </div>
       </div>
-      <div class="description-block__specification-product">
-        <strong class="specification-product__slogan">PH=1,4</strong>
-        <p class="specification-product__specification">
-          Piruvic40 solution - срединный пилинг (водно-спиртовой раствор).
-Пилинг имеет довольно много показаний, возможно, его популярность во многом объясняется именно этим фактом. К  отличительным особенностям Piruvic40 solution можно отнести небольшой размер молекул и высокую проникающую способность.
-        </p>
-      </div>
-      <div class="description-block__application">
-        <ol class="application__list">
-          <li>
-            <h4 class="application__use-title">
-              Акне и угревая сыпь
-            </h4>
-            <p class="application__mode-use">
-              Лечение акне — одна процедура раз в 8-10 дней.
-            </p>
-          </li>
-          <li>
-            <h4 class="application__use-title">
-              Повышенная сезонная или возрастная пигментация
-            </h4>
-            <p class="application__mode-use">
-              Устранение пигментации — одна процедура в 10-12 дней.
-            </p>
-          </li>
-          <li>
-            <h4 class="application__use-title">
-              Первые признаки старения
-            </h4>
-            <p class="application__mode-use">
-              Омоложение — одна процедура раз в две недели.
-            </p>
-          </li>
-        </ol>
-      </div>
+      <a href="catalog.html" class="basket-list-block__link-btn btn">В магазин</a>
     </section>
-
-    <section class="similar-block">
-      <ul class="similar-block__slider">
-        <li>
-          <a class="popullar-card card">
-            <img class="card__img"
-             src="./../images/content/popular-product-card.png" 
-             width="275" height="275"
-             alt="card pictur">
-             <div class="card-description__wrapper">
-               <h3 class="card__title">
-                Piruvic40 solution Medicare Proffessional
-               </h3>
-               <p class="card__price price">
-                12 250 грн.
-               </p>
-             </div>
-          </a>
-        </li>
-        <li>
-          <a class="popullar-card card card--hit">
-            <img class="card__img"
-             src="./../images/content/popular-product-card2.png" 
-             width="275" height="275"
-             alt="card pictur">
-             <div class="card-description__wrapper">
-               <h3 class="card__title">
-                Dr.Hedison Premium Skin Care Returning Eye Patch.
-               </h3>
-               <p class="card__price price">
-                12 250 грн.
-               </p>
-             </div>
-          </a>
-        </li>
-        <li>
-          <a class="popullar-card card card--present">
-            <img class="card__img"
-             src="./../images/content/popular-product-card3.png" 
-             width="275" height="275"
-             alt="card pictur">
-             <div class="card-description__wrapper">
-               <h3 class="card__title">
-                Carboxy CO2 Lamic Cosmetici
-               </h3>
-               <p class="card__price price">
-                12 250 грн.
-               </p>
-             </div>
-          </a>
-        </li>
-        <li>
-          <a class="popullar-card card card--hit">
-            <img class="card__img"
-             src="./../images/content/popular-product-card4.png" 
-             width="275" height="275"
-             alt="card pictur">
-             <div class="card-description__wrapper">
-               <h3 class="card__title">
-                ТСА 10% DAY Peel 10% ТСА Dermagenetic
-               </h3>
-               <p class="card__price price">
-                12 250 грн.
-               </p>
-             </div>
-          </a>
-        </li>
-        <li>
-          <a class="popullar-card card card--new">
-            <img class="card__img"
-             src="./../images/content/popular-product-card5.png" 
-             width="275" height="275"
-             alt="card pictur">
-             <div class="card-description__wrapper">
-               <h3 class="card__title">
-                lios SPF 50 3in1 UVA/UVB Dermagenetic
-               </h3>
-               <p class="card__price price">
-                12 250 грн.
-               </p>
-             </div>
-          </a>
-        </li>
-        <li>
-          <a class="popullar-card card card--new">
-            <img class="card__img"
-             src="./../images/content/popular-product-card6.png" 
-             width="275" height="275"
-             alt="card pictur">
-             <div class="card-description__wrapper">
-               <h3 class="card__title">
-                MELANOSTOP CREAM Bellеzza
-               </h3>
-               <p class="card__price price price--discount">
-                12 250 грн.
-               </p>
-             </div>
-          </a>
-        </li>
-      </ul>
-      <button class="slider-prev-snap snap" type="button">
-        <span class="visually-hidden">назад</span>
-      </button>
-      <button class="slider-next-snap snap" type="button">
-        <span class="visually-hidden">вперед</span>
+    
+    <section class="total-info-block">
+      <h2 class="total-info-block__title">
+        Сумма к оплате
+      </h2>
+      <p>
+        Товаров на:
+        <span class="total-info-block__total-price">24 500 грн.</span>
+      </p>
+      <p>
+        Общий вес:
+        <span class="total-info-block__total-weight">0,07 кг</span>
+      </p>
+      <p>
+        Скидка:
+        <span class="total-info-block__total-discount">0 грн.</span>
+      </p>
+      <button type="button" class="total-info-block__order-btn btn-fon">
+        Оформить заказ
       </button>
     </section>
 
@@ -453,6 +352,6 @@
     </div>
   </footer>
 
-  <script src="../card.js"></script>
+  <script src="../basket.js"></script>
 </body>
 </html>

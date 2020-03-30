@@ -12,7 +12,9 @@ module.exports = env => {
     mode: isProduction ? "production" : "development",
     entry: {
       index: './src/index.js',
-      catalog: './src/catalog.js'
+      catalog: './src/catalog.js',
+      card: './src/card.js',
+      basket: './src/basket.html',
     },
     output: {
       path: path.join(__dirname, "dist"),
