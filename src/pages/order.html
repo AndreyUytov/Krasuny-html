@@ -136,7 +136,52 @@
     </nav>
 
     <section class="checkout-block">
-      
+      <h2 class="checkout-block__title">Оформление заказа</h2>
+      <form class="checkout-block__form">
+        <ol class="checkout-block__form-list">
+          <li>
+            <h3 class="form-list__subtitle">Введите личные данные</h3>
+            <fieldset>
+              <legend>Зарегистрироваться</legend>
+              <label>
+                <input type="radio" class="form-list__radio radio" name='log-in' checked value="true"/>
+                Да
+              </label>
+              <label>
+                <input type="radio" class="form-list__radio radio" name='log-in' value="false"/>
+                Нет
+              </label>
+            </fieldset>
+            <label>
+              Ваше имя
+              <input type="text" class="form-list__input-text" />
+            </label>
+            <label>
+              Ваша фамилия
+              <input type="text" class="form-list__input-text" />
+            </label>
+            <label>
+              Телефон
+              <input type="text" class="form-list__input-text" />
+            </label>
+            <label>
+              E-mail
+              <input type="email" class="form-list__input-text" />
+            </label>
+            <label>
+              Комментарий к заказу
+              <textarea type="email" class="form-list__input-text-comment">
+
+              </textarea>
+            </label>
+          </li>
+          <li>
+            <select>
+              <option></option>
+            </select>
+          </li>
+        </ol>
+      </form>
     </section>
 
   </main>
