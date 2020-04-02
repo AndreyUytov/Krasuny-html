@@ -176,9 +176,53 @@
             </label>
           </li>
           <li>
-            <select>
-              <option></option>
-            </select>
+            <h3 class="form-list__subtitle">Выберите способ доставки</h3>
+            <label>
+              Способ доставки 
+              <select>
+                <option>Почта — Наложенным платежом</option>
+                <option>Курьерская доставка</option>
+                <option>Самовывоз</option>
+              </select>
+            </label>
+            <label>
+              Город доставки
+              <input type="text" class="form-list__input-text" />
+            </label>
+            <label>
+              Адрес доставки
+              <input type="text" class="form-list__input-text" />
+            </label>
+          </li>
+          <li>
+            <h3 class="form-list__subtitle">Выберите способ оплаты</h3>
+            <ul class="form-list__payment-list">
+              <li>
+                <label class="master-card">
+                  <input type="radio" class="form-list__input-payment" name="type-payment" value="master-card" />
+                </label>
+              </li>
+              <li>
+                <label class="payment-visa">
+                  <input type="radio" class="form-list__input-payment" name="type-payment" value="visa" />
+                </label>
+              </li>
+              <li>
+                <label class="payment-maestro">
+                  <input type="radio" class="form-list__input-payment" name="type-payment" value="maestro" />
+                </label>
+              </li>
+              <li>
+                <label class="payment-pay-pal">
+                  <input type="radio" class="form-list__input-payment" name="type-payment" value="pay-pal" />
+                </label>
+              </li>
+              <li>
+                <label class="payment-cash">
+                  <input type="radio" class="form-list__input-payment" name="type-payment" value="cash" />
+                </label>
+              </li>
+            </ul>
           </li>
         </ol>
       </form>
