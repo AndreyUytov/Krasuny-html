@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Оформление заказа</title>
+  <title>Личный кабинет</title>
 </head>
 <body>
   <header class="page-header">
@@ -113,7 +113,6 @@
     </section>
     <a href="catalog.html">CATALOG!!!!!!</a>
   </header>
-
   <main class="page-main">
     <nav class="breadcrumbs-nav">
       <ul class="breadcrumbs-nav__list">
@@ -124,175 +123,72 @@
         </li>
         <li>
           <a href="" class="breadcrumbs-nav__link link">
-            Корзина
-          </a>
-        </li>
-        <li>
-          <a href="" class="breadcrumbs-nav__link link">
-            Оформление заказа
+            Личный кабинет
           </a>
         </li>
       </ul>
     </nav>
-
-    <section class="checkout-block">
-      <h2 class="checkout-block__title">Оформление заказа</h2>
-      <form class="checkout-block__form">
-        <ol class="checkout-block__form-list">
+    <section class="profile-block-aside">
+      <nav class="profile-block-aside__nav">
+        <h3 class="profile-block-aside__nav-subtitle">Личная информация</h3>
+        <ul>
           <li>
-            <h3 class="form-list__subtitle">Введите личные данные</h3>
-            <fieldset>
-              <legend>Зарегистрироваться</legend>
-              <label>
-                <input type="radio" class="form-list__radio radio" name='log-in' checked value="true"/>
-                Да
-              </label>
-              <label>
-                <input type="radio" class="form-list__radio radio" name='log-in' value="false"/>
-                Нет
-              </label>
-            </fieldset>
-            <label>
-              Ваше имя
-              <input type="text" class="form-list__input-text input-text" />
-            </label>
-            <label>
-              Ваша фамилия
-              <input type="text" class="form-list__input-text input-text" />
-            </label>
-            <label>
-              Телефон
-              <input type="text" class="form-list__input-text input-text" />
-            </label>
-            <label>
-              E-mail
-              <input type="email" class="form-list__input-text input-text" />
-            </label>
-            <label>
-              Комментарий к заказу
-              <textarea type="email" class="form-list__input-text-comment">
-
-              </textarea>
-            </label>
+            <a href="" class="profile-block-aside__nav-link link">Профиль</a>
           </li>
           <li>
-            <h3 class="form-list__subtitle">Выберите способ доставки</h3>
-            <label>
-              Способ доставки 
-              <select>
-                <option>Почта — Наложенным платежом</option>
-                <option>Курьерская доставка</option>
-                <option>Самовывоз</option>
-              </select>
-            </label>
-            <label>
-              Город доставки
-              <input type="text" class="form-list__input-text input-text" />
-            </label>
-            <label>
-              Адрес доставки
-              <input type="text" class="form-list__input-text input-text" />
-            </label>
+            <a href="" class="profile-block-aside__nav-link link">Данные для консультации</a>
+          </li>
+        </ul>
+        <h3 class="profile-block-aside__nav-subtitle">Заказы</h3>
+        <ul>
+          <li>
+            <a href="" class="profile-block-aside__nav-link link">Избранные товары</a>
           </li>
           <li>
-            <h3 class="form-list__subtitle">Выберите способ оплаты</h3>
-            <ul class="form-list__payment-list">
-              <li>
-                <label class="master-card">
-                  <input type="radio" class="form-list__input-payment" name="type-payment" value="master-card" />
-                </label>
-              </li>
-              <li>
-                <label class="payment-visa">
-                  <input type="radio" class="form-list__input-payment" name="type-payment" value="visa" />
-                </label>
-              </li>
-              <li>
-                <label class="payment-maestro">
-                  <input type="radio" class="form-list__input-payment" name="type-payment" value="maestro" />
-                </label>
-              </li>
-              <li>
-                <label class="payment-pay-pal">
-                  <input type="radio" class="form-list__input-payment" name="type-payment" value="pay-pal" />
-                </label>
-              </li>
-              <li>
-                <label class="payment-cash">
-                  <input type="radio" class="form-list__input-payment" name="type-payment" value="cash" />
-                </label>
-              </li>
-            </ul>
+            <a href="" class="profile-block-aside__nav-link link">Мои заказы</a>
           </li>
-        </ol>
+        </ul>
+      </nav>
+      <button type="button" class="profile-block-aside-btn btn">Выйти</button>
+    </section>
+    <section class="profile-block-main">
+      <h2 class="profile-block-main__title">Профиль</h2>
+      <form class="profile-block-main__form">
+        <fieldset>
+          <label>
+            Ваше имя
+            <input type="text" class="form__input-text input-text" />
+          </label>
+          <label>
+            Ваша фамилия
+            <input type="text" class="form__input-text input-text" />
+          </label>
+          <label>
+            Телефон
+            <input type="text" class="form__input-text input-text" />
+          </label>
+          <label>
+            E-mail
+            <input type="email" class="form__input-text input-text" />
+          </label>
+          <label>
+            Адрес доставки
+            <input type="text" class="form__input-text input-text" />
+            <button type="button" class="form__btn-link link">Выбрать точку точку на карте</button>
+          </label>
+          <label>
+            Пароль
+            <input type="text" class="form__input-text input-text input-text--password" />
+          </label>
+          <label>
+            Повторите пароль
+            <input type="text" class="form__input-text input-text input-text--password" />
+          </label>
+        </fieldset>
+        <button type="submit" class="profile-block-main__form-submit btn-fon">Сохранить изменения</button>
       </form>
     </section>
-
-    <section class="order-info-block">
-      <h2 class="order-info-block__tittle">Ваш заказ</h2>
-      <ul class="order-info-block__order-page-list">
-        <li>
-          <a class="basket-small-card card">
-            <img class="basket-small-card__img" 
-            src="./../images/content/basket-card.png"
-            alt="small product card imagine" width="72" height="84" />
-            <div class="basket-small-card-description__wrapper">
-              <h3 class="basket-small-card__title">
-               Гидрогелевые патчи Dr. Hedison 
-              </h3>
-              <p class="basket-small-card__weight">
-               Вес (гр): 35
-             </p>
-            </div>
-          </a>
-          <div class="order-page-list__right-column">
-            <button type="button" class="order-page-list__right-column-snap snap">
-              <span class="visually-hidden">Удалить из заказа</span>
-            </button>
-            <span class="order-page-list__right-column-price">12 250 грн.</span>
-          </div>
-        </li>
-        <li>
-          <a class="basket-small-card card">
-            <img class="basket-small-card__img" 
-            src="./../images/content/small-product-card.png"
-            alt="small product card imagine" width="72" height="84" />
-            <div class="basket-small-card-description__wrapper">
-              <h3 class="basket-small-card__title">
-               Гидрогелевые патчи Dr. Hedison 
-              </h3>
-              <p class="basket-small-card__weight">
-               Вес (гр): 35
-             </p>
-            </div>
-          </a>
-          <div class="order-page-list__right-column">
-            <button type="button" class="order-page-list__right-column-snap snap">
-              <span class="visually-hidden">Удалить из заказа</span>
-            </button>
-            <span class="order-page-list__right-column-price">12 250 грн.</span>
-          </div>
-        </li>
-      </ul>
-      <div class="order-info-block__total-check">
-        <p>
-          <span>Сумма за заказ</span>
-          <span>18 375 грн.</span>
-        </p>
-        <p>
-          <span>Доставка</span>
-          <span>0 грн</span>
-        </p>
-        <p>
-          <strong>Итого у оплате:</strong>
-          <strong>18 875 грн</strong>
-        </p>
-      </div>
-      <button type="submit" class="total-check__submit-btn btn-fon">Оплатить</button>
-    </section>
-
   </main>
-
   <footer class="page-footer">
     <div class="page-footer-wrapper">
       <div class="page-footer__up-row">
@@ -409,7 +305,5 @@
       </div>
     </div>
   </footer>
-
-  <script src="order.js"></script>
 </body>
 </html>
