@@ -15,6 +15,8 @@ module.exports = env => {
       catalog: './src/catalog.js',
       card: './src/card.js',
       basket: './src/basket.html',
+      loginFavorite: './src/login-favorite.js',
+      loginProfile: './src/login-profile.js',
     },
     output: {
       path: path.join(__dirname, "dist"),
