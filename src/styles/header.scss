@@ -1,0 +1,38 @@
+.header-block {
+    height: 94px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.header-left-block__wrapper {
+    position: absolute;
+    top: 0;
+    left: 668px;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-left-block {
+    width: 300%;
+    height: 94px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: $akcent;
+}
+
+.header-left-block__inner-wrapper {
+    width: 668px;
+    display: flex;
+    align-items: center;
+}
+
+.header-right-block {
+    width: 492px;
+    margin-left: auto;
+}

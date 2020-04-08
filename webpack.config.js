@@ -14,7 +14,7 @@ module.exports = env => {
       index: './src/index.js',
       catalog: './src/catalog.js',
       card: './src/card.js',
-      basket: './src/basket.html',
+      basket: './src/basket.js',
       loginFavorite: './src/login-favorite.js',
       loginProfile: './src/login-profile.js',
     },
