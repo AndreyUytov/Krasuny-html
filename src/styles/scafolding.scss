@@ -17,7 +17,10 @@ html {
 }
 
 body {
-	font-size: 16px;
+	font-family: 'Lato Regular';
+	font-size: 18px;
+	line-height: 26px;
+	color: #333333;
 }
 
 .content-box-component {
@@ -43,33 +46,56 @@ input[type="radio"].visually-hidden {
 }
 
 .btn {
-	padding: 5px;
-
+	padding: 10px 30px;
     display: flex;
     justify-content: center;
 	align-items: center;
 	
-	color: white;
+	color: $akcent;
 
-	background-color: $btnThema;
-	border: 1px solid transparent;
+	background-color: transparent;
+	border: 2px solid $akcent;
+	border-radius: 23px;
 	cursor: pointer;
 	&:hover {
-		background-color: transparent;
-		border: 1px solid white;
-		color: $btnThema;
-		background-color: black;
+		background-color: $hoverBtn;
+		border: 2px solid #ED9E78;
 	}
 	&:active {
-		transform: scale(1.1);
+		background-color: $akcent;
+		color: #ffffff;
 	}
-	&:disabled {
-		background-color: grey;
-		cursor: default;
-		box-shadow: none;
-		color: white;
-		border: 1px solid transparent;
+}
+
+.btn-fon {
+	padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	
+	color: #ffffff;
+
+	background-color: $akcent;
+	border: none;
+	border-radius: 23px;
+	cursor: pointer;
+	&:hover {
+		background-color: $hoverBtnFon;
 	}
+}
+
+.snap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	
+	background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
 }
 
 .container {
