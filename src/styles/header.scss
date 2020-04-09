@@ -61,6 +61,7 @@
 .header-left-block__search-snap {
     width: 46px;
     height: 46px;
+    margin-left: auto;
 
     border: 2px solid #FFFFFF;
 
@@ -70,4 +71,49 @@
 .header-right-block {
     width: 492px;
     margin-left: auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-right-block__site-nav {
+    @include display-flex();
+}
+
+.site-nav__list {
+    width: 152px;
+    justify-content: space-between;
+}
+
+.site-nav__item {
+	@include display-flex();
+	width: 32px;
+    height: 32px;
+    
+    border: none;
+	background-color: transparent;
+	cursor: pointer;
+	
+	background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+}
+
+.site-nav__item--favorite {
+    background-image: url(../images/fon/favorite-icon.png);
+}
+
+.site-nav__item--login {
+    background-image: url(../images/fon/login-icon.png);
+}
+
+.site-nav__item--basket {
+    background-image: url(../images/fon/basket-icon.png);
+}
+
+.site-nav__btn {
+    width: 219px;
+    height: 46px;
+    margin-left: 40px;
 }

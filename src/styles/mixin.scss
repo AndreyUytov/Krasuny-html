@@ -5,15 +5,8 @@
     list-style: none;
 }
 
-@mixin pm-reset {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-@mixin flex-block {
+@mixin display-flex {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }

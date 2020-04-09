@@ -98,22 +98,13 @@ input[type="radio"].visually-hidden {
     background-position: center;
 }
 
+.nav-list {
+	@include ul-reset();
+	@include display-flex();
+}
+
 .container {
 	width: 1160px;
     margin: 0 auto;
 	padding: 0;
-}
-
-.link {
-	@include flex-block;
-    padding-bottom: 5px;
-
-    font-size: 18px;
-
-    &:hover {
-		color: $btnThema;
-    }
-    &:active {
-        color: grey;
-    }
 }
