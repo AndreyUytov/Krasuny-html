@@ -69,6 +69,7 @@
 }
 
 .header-right-block {
+    position: relative;
     width: 492px;
     margin-left: auto;
 
@@ -78,6 +79,7 @@
 }
 
 .header-right-block__site-nav {
+    position: fixed; 
     @include display-flex();
 }
 
