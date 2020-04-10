@@ -1,0 +1,33 @@
+.page-footer {
+    overflow: hidden;
+}
+
+.page-footer-wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 200%;
+        min-height: 100%;
+
+        display: block;
+
+        background-color: $footerFon;
+        border-top-left-radius: 86px;
+        z-index: -1;
+    }
+}
+
+.page-footer__up-row {
+    max-width: 1160px;
+    display: flex;
+}
+
+.page-footer__down-row {
+    max-width: 1160px;
+    display: flex;
+}
