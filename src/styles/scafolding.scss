@@ -108,3 +108,10 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
 	padding: 0;
 }
+
+@keyframes banner-show {
+	from, to {
+		display: block;
+	}
+
+}
