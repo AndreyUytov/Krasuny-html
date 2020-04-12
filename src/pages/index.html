@@ -86,10 +86,12 @@
             <ul class="banner-products__list">
               <li class="banner-products__list-item">
                 <figure>
-                  <img class="banner-img banner-img--z-index" src="./../images/content/banner-big-img.png"
-                  width="178" height="473" alt="product-banner imagination">
-                  <figcaption>
-                    <a class="small-card card">
+                  <a href="#" class="banner-img banner-img--z-index">
+                    <img src="./../images/content/banner-big-img.png"
+                    width="178" height="473" alt="product-banner imagination">
+                  </a>
+                  <figcaption class="first-figcaption">
+                    <div class="small-card card">
                       <img class="small-card__img" 
                       src="./../images/content/small-product-card.png"
                       alt="small product card imagine" width="63" height="63" />
@@ -101,16 +103,18 @@
                          12 250 грн.
                        </span>
                       </div>
-                    </a>
+                    </div>
                   </figcaption>
                 </figure>
               </li>
               <li class="banner-products__list-item">
                <figure>
-                 <img class="banner-img" src="./../images/content/banner-small-img.png"
-                 width="144" height="386" alt="product-banner imagination">
-                 <figcaption>
-                   <a class="small-card card">
+                 <a href="#" class="banner-img">
+                  <img src="./../images/content/banner-small-img.png"
+                  width="144" height="386" alt="product-banner imagination">
+                 </a>
+                 <figcaption class="two-figcaption">
+                   <div class="small-card card">
                      <img class="small-card__img" 
                      src="./../images/content/small-product-card.png"
                      alt="small product card imagine" width="63" height="63" />
@@ -122,7 +126,7 @@
                          12 250 грн.
                        </span>
                      </div>
-                   </a>
+                   </div>
                  </figcaption>
                </figure>
              </li>
@@ -130,52 +134,62 @@
           </div>
         </section>
 
-        <section class="catalog-block">
+        <section class="catalog-block container">
+          <div class="catalog-block__description">
+            <h2 class="catalog-block__title">
+              Категории
+            </h2>
+            <span class="catalog-block__slogan">
+              Современные технологии и лучшие традиции классической косметологии на службе вашей красоты и здоровья.
+            </span>
+          </div>
           <ul class="catalog-block__list">
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--one">
               <a href="" class="link">Очищающие средства, тонизация</a>
             </li>
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--five">
               <a href="" class="link">Мезороллеры, аксессуары</a>
             </li>
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--nine">
               <a href="" class="link">Средства для волос и тела</a>
             </li>
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--two">
               <a href="" class="link">Средства для орбитальной зоны</a>
             </li>
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--six">
               <a href="" class="link">Карбокситерапия</a>
             </li>
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--ten">
               <a href="" class="link">Средства с SPF, BB/СС-крема</a>
             </li>
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--three">
               <a href="" class="link">Крема, сыворотки</a>
             </li>
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--seven">
               <a href="" class="link">Маски</a>
             </li>
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--four">
               <a href="" class="link">Химические пилинги</a>
             </li>
-            <li class="catalog-block__list-item">
+            <li class="catalog-block__list-item catalog-block__list-item--eight">
               <a href="" class="link">Концентраты, мезококтейли</a>
             </li>
           </ul>
         </section>
 
         <section class="about-block">
-          <div class="about-block__wrapper">
-            <strong class="about-block__slogan">
-              Наш товар не купить в магазинах
-            </strong>
-            <p class="about-block__description">
-              В нашем портфеле — продукты известных мировых производителей профессиональной косметики и космецевтики, не только полностью удовлетворяющие запросам клиентов, но и отвечающие высоким требованиям профессионалов, работающих с ними.
-            </p>
-            <button class="about-block__btn btn-fon" type="button">
-              Подобрать косметику
-            </button>
+          <div class="about-block__out-wrapper container">
+            <div class="about-block__wrapper">
+              <h3 class="about-block__slogan">
+                Наш товар не купить в магазинах
+              </h3>
+              <div class="about-block__description">
+                В нашем портфеле — продукты известных мировых производителей профессиональной косметики и космецевтики, не только полностью удовлетворяющие запросам клиентов, но и отвечающие высоким требованиям профессионалов, работающих с ними.
+              </div>
+              <button class="about-block__btn btn-fon" type="button">
+                Подобрать косметику
+              </button>
+            </div>
           </div>
         </section>
 

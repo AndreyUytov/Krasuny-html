@@ -7,7 +7,11 @@
 @import './header';
 @import './footer';
 
-// banner-block на index.html
+// блоки на index.html
 @import './banner-block.scss';
+@import './catalog-block.scss';
+@import './about-block.scss';
+@import './bestseller-block.scss';
 
+// попапы
 @import './menu-popup';

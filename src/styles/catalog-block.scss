@@ -1,0 +1,129 @@
+.catalog-block {
+    margin-bottom: 140px;
+}
+
+.catalog-block__description {
+    width: 520px;
+    margin-bottom: 40px;
+}
+
+.catalog-block__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+
+    text-transform: uppercase;
+}
+
+.catalog-block__list {
+    @include ul-reset();
+
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    grid-template-rows: repeat(7, 134.5px);
+    gap: 20px;
+    grid-template-areas: "one . . ." "one two . four" "five two three four" "five six three eight" "nine six seven eight" "nine ten seven ." ". ten . .";
+}
+
+.catalog-block__list-item {
+    width: 275px;
+    height: 275px;
+
+    display: flex;
+    align-items: flex-end;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 275px 275px;
+}
+
+.catalog-block__list-item .link {
+    width: 100%;
+    height: 102px;
+    padding: 25px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 26px;
+
+    text-transform: uppercase;
+
+    color: #333333;
+
+    background: linear-gradient(0deg, #F8DBCD 0%, rgba(248, 219, 205, 0) 100%);
+}
+
+.catalog-block__list-item--one {
+    grid-area: one;
+
+    background-image: url(../images/fon/1-catalog.png);
+}
+
+.catalog-block__list-item--two {
+    grid-area: two;
+    
+    background-image: url(../images/fon/2-catalog.png);
+}
+
+.catalog-block__list-item--three {
+    grid-area: three;
+    
+    background-image: url(../images/fon/3-catalog.png);
+}
+
+.catalog-block__list-item--four {
+    grid-area: four;
+    
+    background-image: url(../images/fon/4-catalog.png);
+}
+
+.catalog-block__list-item--five {
+    grid-area: five;
+    
+    background-image: url(../images/fon/5-catalog.png);
+}
+
+.catalog-block__list-item--six {
+    grid-area: six;
+    
+    background-image: url(../images/fon/6-catalog.png);
+}
+
+.catalog-block__list-item--seven {
+    grid-area: seven;
+    
+    background-image: url(../images/fon/7-catalog.png);
+}
+
+.catalog-block__list-item--eight {
+    grid-area: eight;
+    
+    background-image: url(../images/fon/8-catalog.png);
+}
+
+.catalog-block__list-item--nine {
+    grid-area: nine;
+    
+    background-image: url(../images/fon/9-catalog.png);
+}
+
+.catalog-block__list-item--ten {
+    grid-area: ten;
+    
+    background-image: url(../images/fon/10-catalog.png);
+}
