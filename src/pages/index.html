@@ -105,7 +105,7 @@
                     width="178" height="473" alt="product-banner imagination">
                   </a>
                   <figcaption class="first-figcaption">
-                    <div class="small-card card">
+                    <div class="small-card">
                       <img class="small-card__img" 
                       src="./../images/content/small-product-card.png"
                       alt="small product card imagine" width="63" height="63" />
@@ -128,7 +128,7 @@
                   width="144" height="386" alt="product-banner imagination">
                  </a>
                  <figcaption class="two-figcaption">
-                   <div class="small-card card">
+                   <div class="small-card">
                      <img class="small-card__img" 
                      src="./../images/content/small-product-card.png"
                      alt="small product card imagine" width="63" height="63" />
@@ -344,73 +344,79 @@
         </section>
 
         <section class="selection-block">
-          <b class="selection-block__slogan">Не знаете что нужно?</b>
-          <p class="selection-block__description">
-            Мы можем помочь вам выбрать из нашего каталога именно  то, что вам нужно, так как косметика очень спецефическая наши специалисты помогут сделать окончательный выбор
-          </p>
-          <div class="selection-block__assortment">
-            <button class="selection-block__btn btn-fon" type="button">
-              Пройти подбор
-            </button>
-          </div>
-          <div class="selection-block__question">
-            <button class="selection-block__btn btn-fon" type="button">
-              Задать вопрос
-            </button>
+          <div class="selection-block__wrapper container">
+            <div class="selection-block__titles">
+              <b class="selection-block__slogan">Не знаете что нужно?</b>
+              <p class="selection-block__description">
+                Мы можем помочь вам выбрать из нашего каталога именно то, что вам нужно, так как косметика очень спецефическая наши специалисты помогут сделать окончательный выбор
+              </p>
+            </div>
+            <div class="selection-block__assortment">
+              <button class="selection-block__btn btn-fon" type="button">
+                Пройти подбор
+              </button>
+            </div>
+            <div class="selection-block__question">
+              <button class="selection-block__btn btn-fon" type="button">
+                Задать вопрос
+              </button>
+            </div>
           </div>
         </section>
 
         <section class="article-block">
-          <strong class="article-block__slogan">
-            Хотите узнать какой именно уход нужен?
-          </strong>
-          <div class="article-block__articles-wrapper">
-            <ul class="article-block__article-list">
-              <li>
-                <a class="article">
-                  <h3 class="arcicle__title">
-                    Патчи для зоны вокруг глаз:  что это такое и зачем они нужны?
-                  </h3>
-                  <p class="article__description">
-                    Во многих онлайн-магазинах рекомендуют оставлять патчи на ночь, мы не рекомендуем оставлять их на ночь, чтобы во время сна не образовались заломы и не оттянуть нежную кожу под глазами.
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a class="article article--small">
-                  <h3 class="arcicle__title">
-                    Мезороллер: який обрати?
-                  </h3>
-                  <p class="article__description">
-                    Вірно підібраний інструмент для мікроголчастої терапії — половина успіху. Дуже важливо обрати мезороллер  з характеристиками, що ідеально підійдуть саме Вам.                  
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a class="article article--small">
-                  <h3 class="arcicle__title">
-                    ЭТАПЫ СТАРЕНИЯ КОЖИ.
-                  </h3>
-                  <p class="article__description">
-                    Вся жизнь за минуту.                  
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a class="article">
-                  <h3 class="arcicle__title">
-                    Патчи для зоны вокруг глаз:  что это такое и зачем они нужны?
-                  </h3>
-                  <p class="article__description">
-                    Во многих онлайн-магазинах рекомендуют оставлять патчи на ночь, мы не рекомендуем оставлять их на ночь, чтобы во время сна не образовались заломы и не оттянуть нежную кожу под глазами.           
-                  </p>
-                </a>
-              </li>
-            </ul>
+          <div class="article-block__wrapper container">
+            <b class="article-block__slogan">
+              Хотите узнать какой именно уход нужен?
+            </b>
+            <div class="article-block__articles-wrapper">
+              <ul class="article-block__article-list">
+                <li class="article">
+                  <a>
+                    <h3 class="article__title">
+                      Патчи для зоны вокруг глаз: что это такое и зачем они нужны?
+                    </h3>
+                    <p class="article__description">
+                      Во многих онлайн-магазинах рекомендуют оставлять патчи на ночь, мы не рекомендуем оставлять их на ночь, чтобы во время сна не образовались заломы и не оттянуть нежную кожу под глазами.
+                    </p>
+                  </a>
+                </li>
+                <li class="article article--small">
+                  <a>
+                    <h3 class="article__title">
+                      Мезороллер: який обрати?
+                    </h3>
+                    <p class="article__description">
+                      Вірно підібраний інструмент для мікроголчастої терапії — половина успіху. Дуже важливо обрати мезороллер  з характеристиками, що ідеально підійдуть саме Вам.                  
+                    </p>
+                  </a>
+                </li>
+                <li class="article article--small">
+                  <a>
+                    <h3 class="article__title">
+                      ЭТАПЫ СТАРЕНИЯ КОЖИ.
+                    </h3>
+                    <p class="article__description">
+                      Вся жизнь за минуту.                  
+                    </p>
+                  </a>
+                </li>
+                <li class="article">
+                  <a>
+                    <h3 class="article__title">
+                      Патчи для зоны вокруг глаз:  что это такое и зачем они нужны?
+                    </h3>
+                    <p class="article__description">
+                      Во многих онлайн-магазинах рекомендуют оставлять патчи на ночь, мы не рекомендуем оставлять их на ночь, чтобы во время сна не образовались заломы и не оттянуть нежную кожу под глазами.           
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="article-block__btn btn" type="button">
+              Читать все программы
+            </button>
           </div>
-          <button class="article-block__btn btn" type="button">
-            Читать все программы
-          </button>
         </section>
 
         <section class="comment-block">
