@@ -27,63 +27,44 @@
     width: 416px;
 }
 
-.bestseller-block__product-list {
-    @include ul-reset();
-    margin-left: -20px;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.popullar-card {
+.card--popullar {
     width: 275px;
     height: 411px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-
-    display: flex;
-    flex-direction: column;
-
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    overflow: hidden;
 }
 
-.card-description__wrapper {
-    width: 100%;
-    padding: 24px;
-    padding-top: 14px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card__title {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-}
-
-.card__price {
-    margin: 0;
-    padding: 0;
-
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-}
-
-.popullar-card--akcent {
+.card--popullar--akcent {
     width: 570px;
+    padding: 40px;
+
+    flex-direction: row-reverse;
+    align-items: center;
 
     background: #EDFDFA;
+
+    & .card__title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 44px;
+        text-transform: uppercase;
+    }
+    & .card__title-sign {
+        margin-top: 20px;
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: none;
+    }
+    & .card__price {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 44px;
+        text-transform: uppercase;
+    }
 }

@@ -103,6 +103,68 @@ input[type="radio"].visually-hidden {
 	@include display-flex();
 }
 
+.product-list {
+	@include ul-reset();
+    margin-left: -20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+	margin-left: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-description__wrapper {
+    width: 100%;
+    padding: 24px;
+    padding-top: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.card__price {
+    margin: 0;
+    padding: 0;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.stars-rating__svg {
+	width: 120px;
+	height: 24px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .container {
 	width: 1160px;
     margin: 0 auto;

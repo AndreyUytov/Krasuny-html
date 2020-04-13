@@ -8,6 +8,20 @@
       <title>Krasunya</title>
     </head>
     <body>
+      <!-- SVG-stars для рейтинга -->
+      <svg style="display: none;">
+        <symbol id="full-star" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 18.0737L5.82 22L7.46 14.6L2 9.62105L9.19 8.97895L12 2L14.81 8.97895L22 9.62105L16.54 14.6L18.18 22L12 18.0737Z" fill="#EC8453"/>
+        </symbol>
+        <symbol id="half-star" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 9.62105L14.81 8.96842L12 2L9.19 8.97895L2 9.62105L7.46 14.6L5.82 22L12 18.0737L18.18 22L16.55 14.6L22 9.62105ZM12 16.1053V6.31579L13.71 10.5684L18.09 10.9684L14.77 14L15.77 18.5053L12 16.1053Z" fill="#EC8453"/>
+        </symbol>
+        <symbol id="empty-star" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 9.62105L14.81 8.96842L12 2L9.19 8.97895L2 9.62105L7.46 14.6L5.82 22L12 18.0737L18.18 22L16.55 14.6L22 9.62105ZM12 16.1053L8.24 18.4947L9.24 13.9895L5.92 10.9579L10.3 10.5579L12 6.31579L13.71 10.5684L18.09 10.9684L14.77 14L15.77 18.5053L12 16.1053Z" fill="#EC8453"/>
+        </symbol>
+      </svg>
+      
+      <!-- SVG-stars для рейтинга -->
       <header class="page-header">
         <section class="header-block container">
           <div class="header-left-block__wrapper">
@@ -202,7 +216,7 @@
           </p>
           <ul class="bestseller-block__product-list product-list">
             <li>
-              <a class="popullar-card card">
+              <a class="card--popullar card">
                 <img class="card__img"
                  src="./../images/content/popular-product-card.png" 
                  width="275" height="275"
@@ -218,7 +232,7 @@
               </a>
             </li>
             <li>
-              <a class="popullar-card card card--hit">
+              <a class="card--popullar card card--hit">
                 <img class="card__img"
                  src="./../images/content/popular-product-card2.png" 
                  width="275" height="275"
@@ -234,7 +248,7 @@
               </a>
             </li>
             <li>
-              <a class="popullar-card card card--present">
+              <a class="card--popullar card card--present">
                 <img class="card__img"
                  src="./../images/content/popular-product-card3.png" 
                  width="275" height="275"
@@ -250,7 +264,7 @@
               </a>
             </li>
             <li>
-              <a class="popullar-card card card--hit">
+              <a class="card--popullar card card--hit">
                 <img class="card__img"
                  src="./../images/content/popular-product-card4.png" 
                  width="275" height="275"
@@ -266,7 +280,7 @@
               </a>
             </li>
             <li>
-              <a class="popullar-card card card--new">
+              <a class="card--popullar card card--new">
                 <img class="card__img"
                  src="./../images/content/popular-product-card5.png" 
                  width="275" height="275"
@@ -282,7 +296,7 @@
               </a>
             </li>
             <li>
-              <a class="popullar-card card card--new">
+              <a class="card--popullar card card--new">
                 <img class="card__img"
                  src="./../images/content/popular-product-card6.png" 
                  width="275" height="275"
@@ -298,14 +312,20 @@
               </a>
             </li>
             <li>
-              <a class="popullar-card card popullar-card--akcent">
+              <a class="card--popullar card card--popullar--akcent">
                 <img class="card__img"
                  src="./../images/content/popular-product-card--akcent.png" 
                  width="201" height="207"
                  alt="card pictur">
                  <div class="card-description__wrapper">
                    <div class="stars-rating">
-                    здесь будет рейтинг
+                    <svg class="stars-rating__svg">
+                      <use xlink:href="#full-star" />
+                      <use x="24px" xlink:href="#full-star" />
+                      <use x="48px" xlink:href="#full-star" />
+                      <use x="72px"xlink:href="#half-star" />
+                      <use x="96px" xlink:href="#empty-star" />
+                    </svg>
                    </div>
                    <h3 class="card__title">
                     Dr Kraut Milano
