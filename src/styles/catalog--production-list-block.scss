@@ -1,0 +1,134 @@
+.production-list-block__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.tags-wrapper {
+    display: flex;
+}
+
+.production-list-block__tags {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.production-list-block__tags-list {
+    @include ul-reset();
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tags-list__item {
+    width: 150px;
+    height: 24px;
+    padding-left: 8px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+
+    background-color: #F0EDEB;
+
+    &:hover {
+        background-color: #F8DBCD;
+        & .tags-list__close-snap {
+            background-image: url(../images/svg/close-snap--hover.svg);
+        }
+    }
+}
+
+.tags-list__close-snap {
+    width: 18px;
+    height: 18px;
+    margin-left: 4px;
+
+    background-image: url(../images/svg/close-snap.svg);
+
+}
+
+.production-list-block__add-snap {
+    width: 34px;
+    height: 24px;
+    margin-left: 8px;
+
+    background-color: #F0EDEB;
+    background-image: url(../images/svg/add-snap.svg);
+
+    &:hover {
+        background-color: #F8DBCD;
+        background-image: url(../images/svg/add-snap--hover.svg);
+    }
+}
+
+.production-list-block__select-form select {
+    width: 205px;
+    height: 30px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+
+    display: flex;
+
+    border: none;
+    border-bottom: solid 2px rgba(51, 51, 51, 0.2);
+    background-color: transparent;
+
+    appearance: none;
+
+    cursor: pointer;
+}
+
+.production-list-block__select-form {
+    position: relative;
+
+    &::before {
+        content: '';
+    
+        position: absolute;
+        top: 0;
+        right: 0;
+    
+        width: 24px;
+        height: 24px;
+    
+        background-image: url(../images/svg/select-snap.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    &:hover select {
+        border-bottom: solid 2px $akcent;
+    }
+
+    &:hover::before {
+        background-image: url(../images/svg/select-snap--hover.svg);
+    }
+}
+
+.production-list-block__select-form option {
+    &:active {
+        cursor: pointer;
+        background-color: $akcent;
+    }
+}

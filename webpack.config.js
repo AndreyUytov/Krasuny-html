@@ -29,7 +29,8 @@ module.exports = env => {
     devServer: {
       contentBase: path.join(__dirname, "dist"),
       watchContentBase: true,
-      publicPath: '/'
+      publicPath: '/',
+      openPage: '/catalog.html'
     },
 
     plugins: [

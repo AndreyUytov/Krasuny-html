@@ -1,0 +1,23 @@
+.page-main--catalog {
+    margin-bottom: 80px;
+    
+    display: grid;
+    grid-template-rows: 20px auto 46px;
+    grid-template-columns: auto 800px;
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+
+    grid-template-areas: "breadcrumbs breadcrumbs" "aside content" ". pagination";
+}
+
+.breadcrumbs-nav {
+    grid-area: breadcrumbs;
+}
+
+.filter-block {
+    grid-area: aside;
+}
+
+.production-list-block {
+    grid-area: content;
+}

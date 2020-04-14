@@ -14,10 +14,14 @@
 .header-block {
     height: 94px;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 
     display: flex;
     align-items: center;
+}
+
+.header-block--index-page {
+    margin-bottom: 100px;
 }
 
 .header-left-block__wrapper {
@@ -95,7 +99,7 @@
 }
 
 .header-right-block__site-nav {
-    //  включено на всех страницах, кроме главной
+    //  инлайном стилей на всех страницах, кроме главной
     // position: fixed;
     @include display-flex();
 }
