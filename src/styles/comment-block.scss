@@ -1,0 +1,114 @@
+.comment-block {
+    margin-bottom: 140px;
+}
+
+.comment-block__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.comment-block__comments-list {
+    @include ul-reset();
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment {
+    width: 623px;
+    height: 241px;
+    margin-bottom: 20px;
+
+    display: flex;
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.comment-wrapper {
+    position: relative;
+
+    width: auto;
+    height: 241px;
+    padding: 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.comment-wrapper__marker {
+    position: absolute;
+    width: 38px;
+    height: 40px;
+
+    top: 0;
+    left: 15px;
+}
+
+.comment__user-name {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.comment__substr {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.comment__card-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: $akcent;
+}
+
+.comment__text {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+
+    font-family: Lato;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.comment__date {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+
+    opacity: 0.5;
+}
