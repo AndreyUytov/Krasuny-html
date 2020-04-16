@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./index.css">
-  <title>Document</title>
+  <title>Catalog</title>
 </head>
 <body>
 
@@ -216,11 +216,16 @@
             <span class="visually-hidden">Добавить тэг</span>
           </button>
         </div>
-        <form class="production-list-block__select-form">
-          <select name="sort-catalog">
-            <option value="rating">По рейтингу</option>
-            <option value="price">По цене</option>
-          </select>
+        <form>
+          <div class="__select" data-state="">
+            <div class="__select__title" data-default="rating">По рейтингу</div>
+            <div class="__select__content">
+              <input id="rating-select" class="__select__input" value="rating" type="radio" name="singleSelect" checked/>
+              <label for="rating-select" class="__select__label">По рейтингу</label>
+              <input id="price-select" class="__select__input" value="price" type="radio" name="singleSelect" />
+              <label for="price-select" class="__select__label">По цене</label>
+            </div>
+          </div>
         </form>
       </div>
 
