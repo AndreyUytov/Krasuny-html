@@ -325,7 +325,41 @@ input[type="radio"].visually-hidden {
     }
   }
 
+.link {
+  position: relative;
+  display: flex;
+  margin-left: 0px;
+  padding-left: 14px;
 
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(51, 51, 51, 0.3);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url(../images/fon/breadcrumbs-fon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  &--active {
+    color: $akcent;
+    &::before {
+      background-image: url(../images/fon/breadcrumbs-fon--active.svg);
+    }
+  }
+}
 
 .container {
 	width: 1160px;
