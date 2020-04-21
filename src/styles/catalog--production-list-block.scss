@@ -112,6 +112,29 @@
   }
 }
 
-.card--akcent {
+.card--akcent-discount {
+    background: #EDFDFA;
+}
 
+.card--akcent-discount__discount {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+
+    text-transform: uppercase;
+    color: $akcent;
+}
+
+.card--akcent-discount__btn {
+    width: 151px;
+    height: 36px;
+    padding: 0px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
 }

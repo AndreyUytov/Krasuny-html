@@ -177,7 +177,7 @@ input[type="radio"].visually-hidden {
 
     & .card-description__wrapper {
       width: 173px;
-      height: 114px;
+      min-height: 114px;
       margin-right: 11px;
       padding: 0px;
       justify-content: space-between;
