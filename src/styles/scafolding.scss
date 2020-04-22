@@ -45,6 +45,8 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 
+// Кнопки с фоном и без, маленькие кнопки (snap)
+
 .btn {
 	padding: 10px 30px;
     display: flex;
@@ -109,6 +111,8 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
 }
+
+// Карточки товаров
 
 .card {
 	margin-left: 20px;
@@ -325,6 +329,8 @@ input[type="radio"].visually-hidden {
     }
   }
 
+  // Ссылки в бреадкрумбс
+
 .link {
   position: relative;
   display: flex;
@@ -360,6 +366,63 @@ input[type="radio"].visually-hidden {
     }
   }
 }
+
+// Фильтры
+
+.filter-form fieldset {
+  padding: 0;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.filter-form legend {
+  margin-bottom: 12px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.filter-form label {
+  position: relative;
+  padding-left: 30px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+
+  &:hover {
+      color: $akcent;
+      & .checkbox {
+        background-image: url(../images/fon/checkbox--hover.svg);
+      }
+  }
+}
+
+.filter-form .checkbox {
+  position: absolute;
+  top: 0;
+  left: 2px;
+
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/fon/checkbox.svg);
+}
+
+input:checked + .checkbox {
+  background-image: url(../images/fon/checkbox--checked.svg);
+}
+
+// Контейнер-центровщик
 
 .container {
 	width: 1160px;
