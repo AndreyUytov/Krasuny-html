@@ -109,25 +109,30 @@
       </h2>
       <form class="filter-block__filter-form filter-form">
         <fieldset class="filter-form__price">
-          <legend>Цена</legend>
-          <label>
-            <input class="visually-hidden" type="checkbox" name="price-check">
-            <span class="filter-form__checkbox checkbox"></span> Скидки
-          </label>
+          <div class="filter-form__price-top-wrapper">
+            <legend>Цена</legend>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="price-check">
+              <span class="filter-form__checkbox checkbox"></span> Скидки
+            </label>
+          </div>
           <div class="wrapper-price-range">
             <div class="price-range__scale">
-              <div class="price-range__bar"></div>
-              <div class="price-range__toggle price-range__toggle--min"></div>
-              <div class="price-range__toggle price-range__toggle--max"></div>
+              <div class="price-range__bar">
+                <div class="price-range__toggle price-range__toggle--min"></div>
+                <div class="price-range__toggle price-range__toggle--max"></div>
+              </div>
             </div>
-            <label>
-              <span class="visually-hidden">min price</span>
-              <input class="filter-form__input" type="text" value="930">
-            </label>
-            <label>
-              <span class="visually-hidden">max price</span>
-              <input class="filter-form__input" type="text" value="25093">
-            </label>
+            <div class="wrapper-price-input">
+              <label>
+                <span class="visually-hidden">min price</span>
+                <input class="filter-form__input" type="text" value="930">
+              </label>
+              <label>
+                <span class="visually-hidden">max price</span>
+                <input class="filter-form__input" type="text" value="25093">
+              </label>
+            </div>
           </div>
         </fieldset>
 
