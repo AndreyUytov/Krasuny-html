@@ -371,7 +371,11 @@ input[type="radio"].visually-hidden {
 
 .filter-form fieldset {
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
+
+  display: flex;
+  flex-direction: column;
+
   border: none;
 }
 
@@ -389,6 +393,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding-left: 30px;
 
+  margin-bottom: 12px;
+
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -397,8 +403,11 @@ input[type="radio"].visually-hidden {
 
   &:hover {
       color: $akcent;
-      & .checkbox {
+      & input:not(:checked) + .checkbox {
         background-image: url(../images/fon/checkbox--hover.svg);
+      }
+      & input:not(:checked) + .radio {
+        background-image: url(../images/fon/radio--hover.svg);
       }
   }
 }
@@ -420,6 +429,25 @@ input[type="radio"].visually-hidden {
 
 input:checked + .checkbox {
   background-image: url(../images/fon/checkbox--checked.svg);
+}
+
+input:checked + .radio {
+  background-image: url(../images/fon/radio--checked.svg);
+}
+
+.filter-form .radio {
+  position: absolute;
+  top: -1px;
+  left: 4px;
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/fon/radio.svg);
 }
 
 // Контейнер-центровщик
