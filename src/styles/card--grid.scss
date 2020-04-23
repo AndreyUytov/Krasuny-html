@@ -1,0 +1,23 @@
+.page-main {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 670px auto;
+    grid-template-rows: 20px 576px auto 490px;
+    grid-template-areas: "breadcrumbs breadcrumbs" "description aside" "description ." "similar similar";
+}
+
+.aside-order-block {
+    padding: 0px 0px 100px 40px;
+    
+    align-self: start;
+    justify-self: start;
+    grid-area: aside;
+}
+
+.description-block {
+    grid-area: description;
+}
+
+.similar-block {
+    grid-area: similar;
+}
