@@ -463,3 +463,69 @@ input:checked + .radio {
 	margin: 0 auto;
 	padding: 0;
 }
+
+// блок для выбора количества товара, добавления в избранное и в корзину
+
+.order-card__controls-row {
+  min-width: 415px;
+  height: 46px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-card__btns-column {
+  width: 143px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-card__snap {
+  width: 46px;
+  height: 46px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.order-card__down-snap {
+  background-image: url(../images/fon/low-snap.svg);
+  &:active {
+    background-image: url(../images/fon/low-snap--active.svg);
+  }
+}
+
+.order-card__up-snap {
+  background-image: url(../images/fon/more-snap.svg);
+  &:active {
+    background-image: url(../images/fon/more-snap--active.svg);
+  }
+}
+
+.order-card__amount-product {
+  padding: 0;
+  margin: 0;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.order-card__order-column {
+  width: 200px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-card__favorite-snap {
+  background-image: url(../images/fon/favorite-snap.svg);
+  &--on {
+    background-image: url(../images/fon/favorite-snap--on.svg);
+  }
+}

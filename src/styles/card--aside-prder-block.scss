@@ -1,0 +1,93 @@
+.order-card__top-row {
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-card__ishere-marker {
+    width: 74px;
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: $hoverBtnFon;
+
+    border: 1px solid $hoverBtnFon;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.order-card__title {
+    margin: 0;
+    padding: 0;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.order-card__price {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+    text-transform: uppercase;
+    
+    color: $hoverBtnFon;
+}
+
+.tags__title {
+    margin-bottom: 18px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.tags__list {
+    @include ul-reset();
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags__list li {
+    height: 24px;
+    margin-right: 6px;
+    padding: 0 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+
+    background: #F0EDEB;
+}
+
+.order-card__brand {
+    margin-top: auto;
+}

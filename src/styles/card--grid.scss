@@ -1,4 +1,4 @@
-.page-main {
+.page-main--card {
     display: grid;
     grid-column-gap: 40px;
     grid-template-columns: 670px auto;
@@ -7,11 +7,28 @@
 }
 
 .aside-order-block {
+    position: relative;
     padding: 0px 0px 100px 40px;
-    
-    align-self: start;
-    justify-self: start;
+
     grid-area: aside;
+
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+
+        width: 300%;
+        height: 500%;
+
+        background-color: #FFF6F3;
+        border-radius: 0px 0px 0px 85px;
+
+        z-index: -1;
+    }
 }
 
 .description-block {

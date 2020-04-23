@@ -87,7 +87,7 @@
   </section>
 </header>
   
-  <main class="page-main container">
+  <main class="page-main--card container">
     <nav class="breadcrumbs-nav">
       <ul class="breadcrumbs-nav__list">
         <li>
@@ -110,23 +110,29 @@
 
     <section class="aside-order-block">
       <div class="order-card__top-row">
-        <div class="order-card__ishere-marker">В наличие</div>
-        <div class="order-card__star-rating">звезды</div>
+        <div class="order-card__ishere-marker">В наличии</div>
+        <svg class="stars-rating__svg">
+          <use xlink:href="#full-star" />
+          <use x="24px" xlink:href="#full-star" />
+          <use x="48px" xlink:href="#full-star" />
+          <use x="72px"xlink:href="#half-star" />
+          <use x="96px" xlink:href="#empty-star" />
+        </svg>
       </div>
       <h3 class="order-card__title">Piruvic40 solution Medicare Proffessional</h3>
       <p class="order-card__price">12 250 ГРН.</p>
       <div class="order-card__controls-row">
         <div class="order-card__btns-column">
-          <button class="order-card__down-snap snap" type="button">
+          <button class="order-card__down-snap order-card__snap snap" type="button">
             <span class="visually-hidden">Уменьшить количество товара</span>
           </button>
           <p class="order-card__amount-product">1</p>
-          <button class="order-card__up-snap snap" type="button">
+          <button class="order-card__up-snap order-card__snap snap" type="button">
             <span class="visually-hidden">Увеличить количество товара</span>
           </button>
         </div>
         <div class="order-card__order-column">
-          <button class="order-card__favorite-snap snap" type="button">
+          <button class="order-card__favorite-snap order-card__snap snap" type="button">
             <span class="visually-hidden">
               Добавить в избранное
             </span>
