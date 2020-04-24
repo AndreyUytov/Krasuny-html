@@ -1,3 +1,24 @@
+.aside-order-block__wrapper {
+    position: fixed;
+    padding: 0px 0px 50px 40px;
+    width: 440px;
+
+    display: flex;
+    flex-direction: column;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 300%;
+        height: 300%;
+        background: #FFF6F3;
+        border-radius: 0px 0px 0px 85px;
+        z-index: -1;
+    }
+}
+
 .order-card__top-row {
     margin-bottom: 20px;
 

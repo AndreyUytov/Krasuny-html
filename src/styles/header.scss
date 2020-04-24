@@ -1,3 +1,11 @@
+.z-index {
+    z-index: 100;
+}
+
+.page-header {
+    position: relative;
+}
+
 .page-header--fon {
     &::before {
         content: '';
