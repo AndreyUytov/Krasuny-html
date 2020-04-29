@@ -1,6 +1,40 @@
+.similar-block {
+    position: relative;
+    margin-bottom: 80px;
+}
+
 .similar-block__slider {
     @include ul-reset();
     
     display: flex;
 
+    overflow: hidden;
+}
+
+.similar-block__slider .popullar-card {
+    width: 275px;
+    height: 411px;
+}
+
+.slider-snap {
+    position: absolute;
+    top: 180px;
+    width: 46px;
+    height: 46px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.08);
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider-prev-snap {
+    left: 0px;
+    background-image: url(../images/fon/prev-snap.svg);
+}
+
+.slider-next-snap {
+    right: -23px;
+    background-image: url(../images/fon/next-snap.svg);
 }
