@@ -30,7 +30,7 @@ module.exports = env => {
       contentBase: path.join(__dirname, "dist"),
       watchContentBase: true,
       publicPath: '/',
-      openPage: '/card.html'
+      openPage: '/basket.html'
     },
 
     plugins: [
