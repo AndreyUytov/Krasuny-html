@@ -110,20 +110,22 @@
     <section class="checkout-block">
       <div class="checkout-block__inner-wrapper">
         <h2 class="checkout-block__title">Оформление заказа</h2>
-        <form class="checkout-block__form">
+        <form class="checkout-block__form filter-form">
           <ol class="checkout-block__form-list">
             <li class="checkout-block__validate">
               <h3 class="form-list__subtitle">Введите личные данные</h3>
               <fieldset>
-                <legend>Зарегистрироваться</legend>
-                <label>
-                  <input type="radio" class="form-list__radio radio" name='log-in' checked value="true"/>
-                  Да
-                </label>
-                <label>
-                  <input type="radio" class="form-list__radio radio" name='log-in' value="false"/>
-                  Нет
-                </label>
+                <div class="checkout-block__legend">Зарегистрироваться</div>
+                <div class="checkout-block__label-wrapper">
+                  <label class="login-label">
+                    <input type="radio" class="visually-hidden" name='log-in' checked value="true"/>
+                    <span class="filter-form__radio radio"></span>Да
+                  </label>
+                  <label class="login-label">
+                    <input type="radio" class="visually-hidden" name='log-in' value="false"/>
+                    <span class="filter-form__radio radio"></span>Нет
+                  </label>
+                </div>
               </fieldset>
               <label>
                 Ваше имя
