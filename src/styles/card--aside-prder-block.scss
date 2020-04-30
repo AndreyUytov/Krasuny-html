@@ -1,28 +1,3 @@
-.aside-order-block__wrapper {
-    position: sticky;
-    top: 175px;
-    padding: 0px 0px 50px 40px;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: -180px;
-        left: 0px;   
-
-        width: 100%;
-        height: calc(100% + 175px);
-        background: #FFF6F3;
-        border-radius: 0px 0px 0px 85px;
-        z-index: -1;
-    }
-}
-
-.inner-wrapper__aside {
-    width: 410px;
-    display: flex;
-    flex-direction: column;
-}
-
 .order-card__top-row {
     margin-bottom: 20px;
 
