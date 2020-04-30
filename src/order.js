@@ -1,1 +1,2 @@
-import './pages/order.html'
+import './pages/order.html';
+import './sticky.js';

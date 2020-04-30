@@ -17,6 +17,7 @@ module.exports = env => {
       basket: './src/basket.js',
       loginFavorite: './src/login-favorite.js',
       loginProfile: './src/login-profile.js',
+      order: './src/order.js'
     },
     output: {
       path: path.join(__dirname, "dist"),
@@ -30,7 +31,7 @@ module.exports = env => {
       contentBase: path.join(__dirname, "dist"),
       watchContentBase: true,
       publicPath: '/',
-      openPage: '/basket.html'
+      openPage: 'order.html'
     },
 
     plugins: [
