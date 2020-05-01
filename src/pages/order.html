@@ -154,19 +154,26 @@
               <label class="filter-form__text-label">
                 Комментарий к заказу
                 <textarea type="email" class="filter-form__text-input">
-
                 </textarea>
               </label>
             </li>
             <li>
               <h3 class="form-list__subtitle">Выберите способ доставки</h3>
-              <label>
-                Способ доставки 
-                <select>
-                  <option>Почта — Наложенным платежом</option>
-                  <option>Курьерская доставка</option>
-                  <option>Самовывоз</option>
-                </select>
+              <label class="filter-form__text-label">
+                Способ доставки
+                <div class="__select" data-state="">
+                  <div class="__select__title checkout-block__select-title" data-default="select">Выберите способ доставки</div>
+                  <div class="__select__content">
+                    <input id="no-select" class="__select__input" value="no-select" type="radio" name="delivery" checked/>
+                    <label for="no-select" class="__select__label checkout-block__select-label">Выберите способ доставки</label>
+                    <input id="post-select" class="__select__input" value="post" type="radio" name="delivery"/>
+                    <label for="post-select" class="__select__label checkout-block__select-label">Почта - наложенным платежом</label>
+                    <input id="cash-select" class="__select__input" value="cash" type="radio" name="delivery" />
+                    <label for="cash-select" class="__select__label checkout-block__select-label">Наличными - при получении</label>
+                    <input id="self-select" class="__select__input" value="self" type="radio" name="delivery" />
+                    <label for="self-select" class="__select__label checkout-block__select-label">Самовывоз</label>
+                  </div>
+                </div>
               </label>
               <label class="filter-form__text-label">
                 Город доставки
@@ -175,35 +182,36 @@
               <label class="filter-form__text-label">
                 Адрес доставки
                 <input type="text" class="filter-form__text-input" />
+                <span class="addres-hint">Выбрать точку на карте</span>
               </label>
             </li>
             <li>
               <h3 class="form-list__subtitle">Выберите способ оплаты</h3>
               <ul class="form-list__payment-list">
                 <li>
-                  <label class="master-card">
-                    <input type="radio" class="form-list__input-payment" name="type-payment" value="master-card" />
-                  </label>
+                  <button type="button" class="payment-master-card payment">
+                    <span class="visually-hidden">Master-card</span>
+                  </button>
                 </li>
                 <li>
-                  <label class="payment-visa">
-                    <input type="radio" class="form-list__input-payment" name="type-payment" value="visa" />
-                  </label>
+                  <button type="button" class="payment-visa payment">
+                    <span class="visually-hidden">payment-visa</span>
+                  </button>
                 </li>
                 <li>
-                  <label class="payment-maestro">
-                    <input type="radio" class="form-list__input-payment" name="type-payment" value="maestro" />
-                  </label>
+                  <button type="button" class="payment-maestro payment">
+                    <span class="visually-hidden">payment-maestro</span>
+                  </button>
                 </li>
                 <li>
-                  <label class="payment-pay-pal">
-                    <input type="radio" class="form-list__input-payment" name="type-payment" value="pay-pal" />
-                  </label>
+                  <button type="button" class="payment-pay-pal payment">
+                    <span class="visually-hidden">payment-pay-pal</span>
+                  </button>
                 </li>
                 <li>
-                  <label class="payment-cash">
-                    <input type="radio" class="form-list__input-payment" name="type-payment" value="cash" />
-                  </label>
+                  <button type="button" class="payment-cash payment">
+                    <span class="visually-hidden">payment-cash</span>
+                  </button>
                 </li>
               </ul>
             </li>

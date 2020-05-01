@@ -80,6 +80,11 @@
     }
 }
 
+.production-list-block__select-form {
+    width: 230px;
+    height: 40px;
+}
+
 .production-list-block__catalog-list {
   @include ul-reset();
    width: 100%;
