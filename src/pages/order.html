@@ -114,38 +114,46 @@
           <ol class="checkout-block__form-list">
             <li class="checkout-block__validate">
               <h3 class="form-list__subtitle">Введите личные данные</h3>
-              <fieldset>
+              <fieldset class="filter-form__fieldset checkout-block__fieldset">
                 <div class="checkout-block__legend">Зарегистрироваться</div>
                 <div class="checkout-block__label-wrapper">
-                  <label class="login-label">
+                  <label class="login-label filter-form__label">
                     <input type="radio" class="visually-hidden" name='log-in' checked value="true"/>
                     <span class="filter-form__radio radio"></span>Да
                   </label>
-                  <label class="login-label">
+                  <label class="login-label filter-form__label">
                     <input type="radio" class="visually-hidden" name='log-in' value="false"/>
                     <span class="filter-form__radio radio"></span>Нет
                   </label>
                 </div>
               </fieldset>
-              <label>
+              <label class="filter-form__text-label">
                 Ваше имя
-                <input type="text" class="form-list__input-text input-text"  required/>
+                <input type="text" class="filter-form__text-input"  required/>
+                <span class="filter-form__valid-input-hint hint">Поле заполнено верно</span>
+                <span class="filter-form__invalid-input-hint hint">Поле заполнено неверно</span>
               </label>
-              <label>
+              <label class="filter-form__text-label">
                 Ваша фамилия
-                <input type="text" class="form-list__input-text input-text"  required/>
+                <input type="text" class="filter-form__text-input"  required/>
+                <span class="filter-form__valid-input-hint hint">Поле заполнено верно</span>
+                <span class="filter-form__invalid-input-hint hint">Поле заполнено неверно</span>
               </label>
-              <label>
+              <label class="filter-form__text-label">
                 Телефон
-                <input type="tel" class="form-list__input-text input-text" pattern="7 [0-9]{3} [0-9]{3} [0-9]{3} [0-9]{1}" required/>
+                <input type="tel" class="filter-form__text-input" pattern="7 [0-9]{3} [0-9]{3} [0-9]{3} [0-9]{1}" required/>
+                <span class="filter-form__valid-input-hint hint">Поле заполнено верно</span>
+                <span class="filter-form__invalid-input-hint hint">Поле заполнено неверно</span>
               </label>
-              <label>
+              <label class="filter-form__text-label">
                 E-mail
-                <input type="email" class="form-list__input-text input-text" required/>
+                <input type="email" class="filter-form__text-input" required/>
+                <span class="filter-form__valid-input-hint hint">Поле заполнено верно</span>
+                <span class="filter-form__invalid-input-hint hint">Поле заполнено неверно</span>
               </label>
-              <label>
+              <label class="filter-form__text-label">
                 Комментарий к заказу
-                <textarea type="email" class="form-list__input-text-comment">
+                <textarea type="email" class="filter-form__text-input">
 
                 </textarea>
               </label>
@@ -160,13 +168,13 @@
                   <option>Самовывоз</option>
                 </select>
               </label>
-              <label>
+              <label class="filter-form__text-label">
                 Город доставки
-                <input type="text" class="form-list__input-text input-text" />
+                <input type="text" class="filter-form__text-input" />
               </label>
-              <label>
+              <label class="filter-form__text-label">
                 Адрес доставки
-                <input type="text" class="form-list__input-text input-text" />
+                <input type="text" class="filter-form__text-input" />
               </label>
             </li>
             <li>

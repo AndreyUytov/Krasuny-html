@@ -92,7 +92,7 @@
     color: rgba(51, 51, 51, 0.3);
 }
 
-.checkout-block__form fieldset {
+.checkout-block__fieldset {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -107,15 +107,14 @@
 }
 
 .checkout-block__label-wrapper {
+    width: 122px;
     display: flex;
     flex-direction: row;
-
-    & .login-label {
-        margin-left: 20px;
-    }
+    justify-content: space-between;
+    
 }
 
-.checkout-block__form label{
+.checkout-block__form label {
     display: flex;
     flex-direction: column;
 }
