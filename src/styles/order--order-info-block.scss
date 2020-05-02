@@ -1,0 +1,141 @@
+.order-info-block .inner-wrapper__sticky {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.order-info-block__tittle {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.order-info-block__order-page-list {
+    width: 100%;
+    @include ul-reset();
+    padding-bottom: 6px;
+    margin-bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+
+    & li {
+        display: flex;
+        margin-bottom: 6px;
+
+        justify-content: space-between;
+    }
+}
+
+.basket-small-card {
+    margin: 0px;
+    width: 220px;
+    height: 84px;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    box-shadow: none;
+    border-radius: 0px;
+
+    & .basket-small-card-description__wrapper {
+        width: 136px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    & .basket-small-card__title {
+        margin: 0;
+        padding: 0;
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    & .basket-small-card__weight {
+        padding: 0;
+        margin: 0;
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+
+        color: rgba(51, 51, 51, 0.5);
+    }
+}
+
+.order-page-list__right-column {
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.order-page-list__right-column-price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.order-page-list__right-column-snap {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/svg/close-snap.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.order-info-block__total-check {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+
+    & p {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+
+        display: flex;
+        justify-content: space-between;
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    & strong {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
