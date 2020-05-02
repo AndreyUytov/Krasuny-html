@@ -1,1 +1,1 @@
-import './pages/login-profile.html'
+import './pages/login-profile.html';

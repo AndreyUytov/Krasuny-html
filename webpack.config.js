@@ -31,7 +31,7 @@ module.exports = env => {
       contentBase: path.join(__dirname, "dist"),
       watchContentBase: true,
       publicPath: '/',
-      openPage: 'order.html'
+      openPage: 'login-profile.html'
     },
 
     plugins: [
