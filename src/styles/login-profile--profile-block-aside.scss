@@ -1,0 +1,93 @@
+.profile-block-aside {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+        width: 300%;
+        height: 300%;
+
+        background-color: #FFF6F3;
+        border-bottom-right-radius: 85px;
+        z-index: -1;
+    }
+}
+
+.avatar__wrapper {
+    width: 100%;
+    margin-bottom: 24px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar__label {
+    width: 140px;
+    height: 140px;
+
+    display: flex;
+
+    background: #FFFFFF;
+    border: 2px solid rgba(51, 51, 51, 0.3);
+    border-radius: 80px;
+    background-image: url(../images/fon/avatar-prodile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    &:hover {
+        border: 2px solid rgba(51, 51, 51, 1);
+    }
+}
+
+.avatar__input {
+    display: none;
+}
+
+.profile-block-aside__nav {
+    margin-bottom: 40px;
+}
+
+.profile-block-aside__nav-subtitle {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+
+}
+
+.profile-block-aside__list {
+    @include ul-reset();
+    width: 100%;
+    margin-bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-block-aside__nav-link {
+    padding-left: 0px;
+    margin-bottom: 12px;
+
+    font-size: 14px;
+    
+    &:not(.link--active) {
+        color: #333333;
+    }
+    &::before {
+        content: none;
+    }
+}

@@ -104,18 +104,25 @@
     </nav>
 
     <section class="profile-block-aside">
+      <div class="avatar__wrapper">
+        <form class="avatar__form" method="post" action="" enctype="multipart/data">
+          <label class="avatar__label">
+            <input type="file" class="avatar__input" />
+          </label>
+        </form>
+      </div>
       <nav class="profile-block-aside__nav">
         <h3 class="profile-block-aside__nav-subtitle">Личная информация</h3>
-        <ul>
+        <ul class="profile-block-aside__list">
           <li>
-            <a href="" class="profile-block-aside__nav-link link">Профиль</a>
+            <a href="" class="profile-block-aside__nav-link link link--active">Профиль</a>
           </li>
           <li>
             <a href="" class="profile-block-aside__nav-link link">Данные для консультации</a>
           </li>
         </ul>
         <h3 class="profile-block-aside__nav-subtitle">Заказы</h3>
-        <ul>
+        <ul class="profile-block-aside__list">
           <li>
             <a href="" class="profile-block-aside__nav-link link">Избранные товары</a>
           </li>
@@ -130,30 +137,32 @@
     <section class="profile-block-main">
       <h2 class="profile-block-main__title">Профиль</h2>
       <form class="profile-block-main__form">
-        <fieldset class="profile-block-main__fieldset">
-          <label class="filter-form__text-label">
+        <fieldset class="profile-block-main__fieldset filter-form__fieldset">
+          <label class="filter-form__text-label profile-block-main__label">
             Ваше имя
             <input type="text" class="filter-form__text-input"  required/>
             <span class="filter-form__valid-input-hint hint">Поле заполнено верно</span>
             <span class="filter-form__invalid-input-hint hint">Поле заполнено неверно</span>
           </label>
-          <label class="filter-form__text-label">
+          <label class="filter-form__text-label profile-block-main__label">
             Ваша фамилия
             <input type="text" class="filter-form__text-input"  required/>
             <span class="filter-form__valid-input-hint hint">Поле заполнено верно</span>
             <span class="filter-form__invalid-input-hint hint">Поле заполнено неверно</span>
           </label>
-          <label class="filter-form__text-label">
+          <label class="filter-form__text-label profile-block-main__label">
             Телефон
-            <input type="tel" class="filter-form__text-input" pattern="7 [0-9]{3} [0-9]{3} [0-9]{3} [0-9]{1}" required/>
+            <input type="tel" class="filter-form__text-input profile-block-main__label" pattern="7 [0-9]{3} [0-9]{3} [0-9]{3} [0-9]{1}" required/>
             <span class="filter-form__valid-input-hint hint">Поле заполнено верно</span>
             <span class="filter-form__invalid-input-hint hint">Поле заполнено неверно</span>
           </label>
-          <label class="filter-form__text-label">
-            E-mail
-            <input type="email" class="filter-form__text-input" required/>
-            <span class="filter-form__valid-input-hint hint">Поле заполнено верно</span>
-            <span class="filter-form__invalid-input-hint hint">Поле заполнено неверно</span>
+          <label class="filter-form__text-label profile-block-main__label">
+            Пароль
+            <input type="password" class="filter-form__text-input" required/>
+          </label>
+          <label class="filter-form__text-label profile-block-main__label">
+            Повторите пароль
+            <input type="password" class="filter-form__text-input" required/>
           </label>
         </fieldset>
         <button type="submit" class="profile-block-main__form-submit btn-fon">Сохранить изменения</button>

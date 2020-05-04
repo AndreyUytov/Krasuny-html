@@ -1,3 +1,7 @@
+.profile-block-main {
+    margin-bottom: 80px;
+}
+
 .profile-block-main__title {
     margin: 0;
     padding: 0;
@@ -22,4 +26,8 @@
 .profile-block-main__form-submit {
     grid-area: button;
     justify-self: end;
+}
+
+.profile-block-main__label {
+
 }
