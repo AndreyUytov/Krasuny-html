@@ -685,3 +685,52 @@ input:checked + .radio {
 
 
 
+.progress-bar {
+  height: 150px;
+  background-color: rgb(71, 135, 155);
+}
+
+.scale {
+  position: relative;
+  width: 350px;
+  height: 15px;
+
+  background: gray;
+}
+
+.bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  // width: 45%;
+  height: 15px;
+
+  border-radius: 25px;
+
+  background-color: white;  
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+
+  background: radial-gradient(60px 23px, transparent 30px,  rgb(71, 135, 155) 31px);
+  background-repeat: repeat-x;
+  background-size: 70px 15px;
+  z-index: 1;
+}
+
+.test {
+  margin-top: 20px;
+}
+
+.test-mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: gray;
+}
