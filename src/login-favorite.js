@@ -1,5 +1,8 @@
 import './pages/login-favorite.html'
 
+import './menu-popup.js';
+import './show-search-form.js'
+
 // Для загрузки аватара на фон label
 
 const avatarForm = document.querySelector('.avatar__form');

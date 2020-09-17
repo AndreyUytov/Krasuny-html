@@ -1,5 +1,8 @@
 import './pages/login-profile.html';
 
+import './menu-popup.js';
+import './show-search-form.js'
+
 // Для загрузки аватара на фон label
 
 const avatarForm = document.querySelector('.avatar__form');
@@ -14,3 +17,4 @@ avatarInput.addEventListener('change', () => {
         avatarLabel.style.backgroundImage = "url(" + reader.result + ")";
     })
 });
+

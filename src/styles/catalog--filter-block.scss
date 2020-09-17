@@ -69,23 +69,22 @@
 }
 
 .price-range__toggle--min {
+    position: absolute;
     transform: translate(-50%,-50%);
 }
 
 .price-range__toggle--max {
-    transform: translate(50%,-50%);
+    position: absolute;
+    transform: translate(-50%,-50%);
 }
 
 .price-range__bar {
     position: absolute;
-    left: 50px;
-    right: 50px;
 
     height: 4px;
     max-width: 100%;
 
     display: flex;
-    justify-content: space-between;
 
     border-radius: 5px;
 
